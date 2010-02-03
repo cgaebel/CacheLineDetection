@@ -37,8 +37,5 @@ unsigned int int_pow(unsigned int base, unsigned int exponent)
 */
 int is_power_of_two(unsigned int num)
 {
-	if(num == 0)
-		return 0;
-	else
-		return (num & (num - 1)) == 0;
+	return x && ((num & (num - 1)) == 0);
 }
