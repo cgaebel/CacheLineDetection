@@ -1,0 +1,13 @@
+
+*.exe
+*.ilk
+*.ncb
+*.suo
+*.user
+*.htm
+*.manifest
+*.res
+*.obj
+*.dep
+*.idb
+*.pdb
