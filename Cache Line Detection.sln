@@ -5,12 +5,18 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Cache Line Detection", "Cac
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
 		Debug|x64 = Debug|x64
+		Release|Win32 = Release|Win32
 		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{45B42465-1424-4866-A8FD-E59DCF258031}.Debug|Win32.ActiveCfg = Debug|Win32
+		{45B42465-1424-4866-A8FD-E59DCF258031}.Debug|Win32.Build.0 = Debug|Win32
 		{45B42465-1424-4866-A8FD-E59DCF258031}.Debug|x64.ActiveCfg = Debug|x64
 		{45B42465-1424-4866-A8FD-E59DCF258031}.Debug|x64.Build.0 = Debug|x64
+		{45B42465-1424-4866-A8FD-E59DCF258031}.Release|Win32.ActiveCfg = Release|Win32
+		{45B42465-1424-4866-A8FD-E59DCF258031}.Release|Win32.Build.0 = Release|Win32
 		{45B42465-1424-4866-A8FD-E59DCF258031}.Release|x64.ActiveCfg = Release|x64
 		{45B42465-1424-4866-A8FD-E59DCF258031}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
