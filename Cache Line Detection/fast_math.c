@@ -16,7 +16,7 @@ unsigned int int_pow(unsigned int base, unsigned int exponent)
 	if(exponent >= 2)
 	{
 		if(is_odd(exponent))
-			return square(int_pow(base, (exponent - 1) / 2)) * base;
+			return int_pow(base, exponent - 1) * base;
 		else
 			return square(int_pow(base, exponent / 2));
 	}
