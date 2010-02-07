@@ -61,6 +61,8 @@ static void fill_timing_data(
 		targetArray = realloc(targetArray, currentAlignment);
 		timingData[i] = timed_iteration(targetArray, currentAlignment);
 	}
+
+	free(targetArray);
 }
 
 /* There's probably a magical math formula involving logarithms that should be used here, but I'm too tired to find it. */
