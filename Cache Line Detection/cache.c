@@ -79,7 +79,10 @@ static unsigned int determine_size_of_timing_data_required(unsigned int maxAlign
 	return size;
 }
 
-/* This function essentially finds the biggest "jump" in timings. */
+/*
+	This function essentially finds the biggest "jump" in timings.
+	A decent heuristic - it worked on my machine!
+*/
 static unsigned int get_cache_line_size_from_timing_data(
 		clock_t* timingData,
 		unsigned int numberOfDataPoints
@@ -105,9 +108,8 @@ static unsigned int get_cache_line_size_from_timing_data(
 	}
 
 	/*
-		The best timing data is at the point before the biggest jump.
-		we start the exponentiation at startAlignment.
-		Therefore, the best alignment is at 2^(best timing data)
+		The best timing data is at the point before the biggest jump,
+		because it's at the magical boundary that's painful to access.
 	*/
 	return int_pow(2, locationOfBiggestJumpAmount - 1);
 }
