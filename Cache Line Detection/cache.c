@@ -119,7 +119,7 @@ unsigned int get_cache_line(unsigned int max)
 	unsigned int startAlignment = 1;
 
 	unsigned int timingDataLength = determine_size_of_timing_data_required(max);
-	clock_t* timingData = calloc(timingDataLength, sizeof(clock_t));
+	clock_t* timingData = malloc(timingDataLength * sizeof(clock_t));
 
 	unsigned int result;
 
